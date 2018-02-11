@@ -1,15 +1,18 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import HelloWorld from '@/components/HelloWorld'
+import ElementUi from 'element-ui'
+import Index from '@/views/Index'
+import '@/styles/common.styl'
 
 Vue.use(Router)
+Vue.use(ElementUi)
 
 export default new Router({
   routes: [
     {
       path: '/',
-      name: 'HelloWorld',
-      component: HelloWorld
+      name: 'Index',
+      component: Index
     }
   ]
 })

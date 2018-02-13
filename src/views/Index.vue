@@ -1,11 +1,13 @@
 <template lang="pug">
   div.index
+    NavFigure
     NavHeader
 
 </template>
 
 <script>
 import NavHeader from './../components/NavHeader'
+import NavFigure from './../components/NavFigure'
 export default {
   data () {
     return {
@@ -13,7 +15,8 @@ export default {
     }
   },
   components: {
-    NavHeader
+    NavHeader,
+    NavFigure
   }
 }
 </script>

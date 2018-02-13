@@ -1,12 +1,9 @@
 <template lang="pug">
-  el-row.NavHeader
-    el-col(:span="24")
-      div.content
-        div.left-content.left
-          div.logo-border
-            img(src="./../assets/logo.png" width="50px" height="50px")
-        h2.left.name.margin-left-1 {{name}}
-        div.right-content
+  header.NavHeader
+    img.left(src="./../assets/logo.png" alt="个人博客" width="60px" height="60px")
+    h1
+      a(href="/") 张欣尧个人博客网站
+    p 关注互联网和搜索引擎的个人博客网站
 </template>
 
 <script>
@@ -20,35 +17,26 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
-  height = 70px
-  logo-width = 50px
-  .NavHeader
-    width 100%
-    height height
-    background-color #409EFF
-    .el-col
-      height height
-    .content
-      width 1200px
-      height height
-      margin 0 auto
-      .left-content
-        width logo-width
-        height logo-width
-        margin ( (height - logo-width) / 2 )
-        .logo-border
-          width logo-width
-          height logo-width
-          border 1px solid #fff
-          border-radius logo-width
-          img
-            width logo-width - 2
-            height logo-width -2
-            border-radius logo-width - 2
-            margin 1px
-      .name
-        color #fff
-        height height
-        line-height height
-
+  header
+    padding 50px 0 0 0
+    width 1100px
+    height 77px
+    margin auto
+    img
+      margin 0 20px 0 30px
+      -webkit-animation 'flipInX' 1s ease 1s backwards
+      -moz-animation 'flipInX' 1s ease 1s backwards
+      -ms-animation 'flipInX' 1s ease 1s backwards
+      -o-animation 'flipInX' 1s ease 1s backwards
+      animation 'flipInX' 1s ease 1s backwards
+    h1
+      font-size 16px
+      font-weight normal
+      text-shadow #fff 1px 1px 1px
+      a
+        color #000
+    p
+      margin 17px 0 0 0
+      text-shadow #000 1px 1px 1px
+      color #fff
 </style>

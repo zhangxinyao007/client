@@ -1,0 +1,29 @@
+<template lang="pug">
+div.login
+  <form class="form-2">
+  <h1><span class="log-in">Log in</span> or <span class="sign-up">sign up</span></h1>
+  <p class="float">
+  <label for="login"><i class="icon-user"></i>Username</label>
+  <input type="text" name="login" placeholder="Username or email">
+  </p>
+  <p class="float">
+  <label for="password"><i class="icon-lock"></i>Password</label>
+  <input type="password" name="password" placeholder="Password" class="showpassword">
+  </p>
+  <p class="clearfix">
+  <a href="#" class="log-twitter">Log in with Twitter</a>
+  <input type="submit" name="submit" value="Log in">
+  </p>
+  </form>​​
+  </section>
+</template>
+
+<script>
+export default {
+
+}
+</script>
+
+<style lang="stylus" scoped>
+
+</style>

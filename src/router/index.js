@@ -15,12 +15,12 @@ export default new Router({
       component: Index
     },
     {
-      path: '/Register',
+      path: '/register',
       name: 'Register',
       component: Register
     },
     {
-      path: '/Login',
+      path: '/login',
       name: 'Login',
       component: Login
     }

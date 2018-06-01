@@ -11,7 +11,8 @@ import NavFigure from './../components/NavFigure'
 export default {
   data () {
     return {
-
+      name: 'zhangxinyao',
+      password: '123456'
     }
   },
   components: {
